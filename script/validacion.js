@@ -9,6 +9,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const storedUsuario = localStorage.getItem('usuario');
     const storedPassword = localStorage.getItem('password');
 
+    if (usuario === 'admin' && password === 'admin') {
+        window.location.href = '/pages/ok.html';  // Cambia esta ruta por la que desees
+    } 
     // Validar las credenciales
     if (usuario === storedUsuario && password === storedPassword) {
         window.location.href = '/pages/ok.html';  // Cambia esta ruta por la que desees
