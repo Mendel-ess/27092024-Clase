@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Pagina Clase 27/9/2024</title>
 </head>
 <body>
@@ -11,16 +11,16 @@
         <div class="form-container">
             <h1>Iniciar Sesion</h1>
     
-            <form action="#" class="form">
+            <form id="loginForm" class="form">
                 <div class="input-group">
                     <label for="usuario" class="sr-only">usuario</label>
                     <div class="relative">
                         <input
-                            type="usuario"
+                            id="usuario"  
+                            type="text"
                             class="input"
                             placeholder="Digite el usuario"
                         />
-                        
                     </div>
                 </div>
     
@@ -28,22 +28,22 @@
                     <label for="password" class="sr-only">Contraseña</label>
                     <div class="relative">
                         <input
+                            id="password"  
                             type="password"
                             class="input"
-                            placeholder="digite su contraseña"
+                            placeholder="Digite su contraseña"
                         />
-                        
                     </div>
                 </div>
     
                 <button type="submit" class="submit-btn">Iniciar sesion</button>
     
                 <p class="signup-link">
-                    No tiene cuenta? <a href="#">Registrarse</a>
+                    No tiene cuenta? <a href="/pages/register.html">Registrarse</a>
                 </p>
             </form>
         </div>
     </div>
-    
+    <script src="file:///C:/Users/Usuario/Documents/Proyectos/clase_27_09_2024/script/validacion.js"></script>  <!-- Enlazado del archivo JavaScript -->
 </body>
 </html>
