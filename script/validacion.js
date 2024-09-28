@@ -5,11 +5,14 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const usuario = document.getElementById('usuario').value;
     const password = document.getElementById('password').value;
 
-    // Validar si los campos están vacíos
-    if (usuario === 'admin' && password === 'admin') {
-        location.href = '/pages/ok.html';   // Detener la ejecución si hay un error
-    }
+    // Obtener las credenciales almacenadas en localStorage
+    const storedUsuario = localStorage.getItem('usuario');
+    const storedPassword = localStorage.getItem('password');
 
-    // Si la validación es exitosa, redirigir a otra página
-     // Cambia esta ruta por la que desees
+    // Validar las credenciales
+    if (usuario === storedUsuario && password === storedPassword) {
+        window.location.href = '/pages/ok.html';  // Cambia esta ruta por la que desees
+    } else {
+        alert('Credenciales incorrectas. Por favor, intenta de nuevo.');
+    }
 });

@@ -11,16 +11,17 @@
         <div class="form-container">
             <h1>Registrar</h1>
     
-            <form action="#" class="form">
+            <form id="registerForm" class="form">
                 <div class="input-group">
                     <label for="usuario" class="sr-only">usuario</label>
                     <div class="relative">
                         <input
-                            type="usuario"
+                            id="usuario"
+                            type="text"
                             class="input"
                             placeholder="Digite el usuario"
+                            required
                         />
-                        
                     </div>
                 </div>
     
@@ -28,11 +29,12 @@
                     <label for="password" class="sr-only">Contraseña</label>
                     <div class="relative">
                         <input
+                            id="password"
                             type="password"
                             class="input"
-                            placeholder="digite su contraseña"
+                            placeholder="Digite su contraseña"
+                            required
                         />
-                        
                     </div>
                 </div>
     
@@ -44,5 +46,6 @@
             </form>
         </div>
     </div>
+    <script src="../script/validacionRegistro.js"></script>  <!-- Enlazado del archivo JavaScript -->
 </body>
 </html>
